@@ -1,3 +1,12 @@
 .parallax {
-    
+    background-image: url("../../images/hero-image.jpg");
+    max-width:100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#herobanner-div {
+    height: 40vh;
 }
