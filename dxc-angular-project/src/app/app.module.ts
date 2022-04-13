@@ -5,6 +5,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HerobannerComponent } from './components/herobanner/herobanner.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import {RouterModule, Routes} from '@angular/router';
+
+const routes: Routes = [
+  {path: '', component: CarouselComponent}
+]
 
 @NgModule({
   declarations: [
@@ -15,9 +20,13 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   ],
   imports: [
     BrowserModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
+
 export class AppModule { }
