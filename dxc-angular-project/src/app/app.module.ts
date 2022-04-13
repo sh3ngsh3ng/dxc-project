@@ -6,9 +6,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HerobannerComponent } from './components/herobanner/herobanner.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import {RouterModule, Routes} from '@angular/router';
+import { MainPageComponent } from './pages/main-page/main-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 const routes: Routes = [
-  {path: '', component: CarouselComponent}
+  {path: '', component: MainPageComponent}
 ]
 
 @NgModule({
@@ -16,7 +18,9 @@ const routes: Routes = [
     AppComponent,
     NavbarComponent,
     HerobannerComponent,
-    CarouselComponent
+    CarouselComponent,
+    MainPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
