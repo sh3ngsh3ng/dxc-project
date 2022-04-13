@@ -10,7 +10,8 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 const routes: Routes = [
-  {path: '', component: MainPageComponent}
+  {path: '', component: MainPageComponent},
+  {path:'contact-us', component: ContactPageComponent}
 ]
 
 @NgModule({
